@@ -2,6 +2,9 @@ import { useState } from "react";
 import { useUser } from "@clerk/clerk-react";
 import { useFinancialRecords } from "../../contexts/financial-record-context";
 
+
+// This file defines the authentication page, including sign-up and sign-in buttons.
+
 export const FinancialRecordForm = () => {
   const [description, setDescription] = useState<string>("");
   const [amount, setAmount] = useState<string>("");

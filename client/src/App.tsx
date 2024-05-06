@@ -4,6 +4,9 @@ import { Dashboard } from './pages/dashboard';
 import { Auth } from './pages/auth';
 import {FinancialRecordsProvider} from "./contexts/financial-record-context"
 import Navbar from './components/Navbar';
+
+
+// This file defines the main component for the application, setting up routing and providing context for financial records.
 function App() {
   return (
     <Router>

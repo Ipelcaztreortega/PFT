@@ -9,6 +9,9 @@ const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 if(!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
 }
+
+// This file renders the main App component, wrapping it with ClerkProvider for authentication.
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>

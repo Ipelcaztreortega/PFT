@@ -3,6 +3,8 @@ import { useFinancialRecords, FinancialRecord} from "../../contexts/financial-re
 import {useTable, Column, CellProps, Row} from 'react-table';
 import './financial-record.css';
 
+
+// This file defines the list component for displaying financial records.
 interface EditableCellProps extends CellProps<FinancialRecord> {
   updateRecord: (rowIndex: number, columnId: string, value: any) => void;
   editable: boolean;

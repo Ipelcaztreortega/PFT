@@ -3,6 +3,7 @@ import FinancialRecordModel from "../schema/financial-record";
 
 const router = express.Router();
 
+// Route to get all financial records by user ID
 router.get("/getAllByUserID/:userId", async (req: Request, res: Response) => {
   try {
     const userId = req.params.userId;
@@ -16,6 +17,7 @@ router.get("/getAllByUserID/:userId", async (req: Request, res: Response) => {
   }
 });
 
+// Route to add a new financial record
 router.post("/", async (req: Request, res: Response) => {
   try {
     const newRecordBody = req.body;
@@ -28,6 +30,7 @@ router.post("/", async (req: Request, res: Response) => {
   }
 });
 
+// Route to update an existing financial record by ID
 router.put("/:id", async (req: Request, res: Response) => {
   try {
     const id = req.params.id;
@@ -46,6 +49,7 @@ router.put("/:id", async (req: Request, res: Response) => {
   }
 });
 
+// Route to delete a financial record by ID
 router.delete("/:id", async (req: Request, res: Response) => {
   try {
     const id = req.params.id;

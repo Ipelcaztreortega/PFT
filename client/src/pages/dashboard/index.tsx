@@ -4,6 +4,9 @@ import {FinancialRecordList} from './financial-record-list';
 import { useFinancialRecords } from '../../contexts/financial-record-context';
 import { useMemo } from 'react';
 
+
+// This file defines the dashboard page, displaying user information, financial record form, total monthly expenses, and financial record list.
+
 export const Dashboard = () => {
     const {user} = useUser();
     const {records} = useFinancialRecords();
